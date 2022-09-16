@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="quote_address">
+        <column xsi:type="varchar" name="ponyu_slot" nullable="false" length="255"/>
+    </table>
+    <table name="sales_order">
+        <column xsi:type="varchar" name="ponyu_slot" nullable="false" length="255"/>
+        <column xsi:type="varchar" name="ponyu_shipment_creation_last_error" length="255" nullable="true" comment="The last error during the shipment creation provided by PonyU" />
+    </table>
+</schema>

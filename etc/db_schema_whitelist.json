@@ -1,0 +1,12 @@
+{
+    "quote_address": {
+        "column": {
+            "ponyu_slot": true
+        }
+    },
+    "sales_order": {
+        "column": {
+            "ponyu_slot": true
+        }
+    }
+}
