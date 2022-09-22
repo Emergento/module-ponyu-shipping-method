@@ -32,7 +32,7 @@ class GetNextAvailableDeliverySlot
         );
 
         foreach ($slots as $slot) {
-            if (strtotime($slot['pickupDate']) > strtotime($currentSlot['pickupDate'])){
+            if (strtotime($slot['pickupDate']) > strtotime($currentSlot['pickupDate'])) {
                 $slot['label'] = $this->generateSlotLabel->execute(
                     new \DateTime($slot['deliveryDateStart'], $ponyUTimeZone),
                     new \DateTime($slot['deliveryDateEnd'], $ponyUTimeZone)

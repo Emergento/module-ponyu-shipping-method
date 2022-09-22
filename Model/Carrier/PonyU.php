@@ -59,12 +59,10 @@ class PonyU extends AbstractCarrier implements CarrierInterface
 
         $result = $this->rateResultFactory->create();
 
-        foreach (
-            $this->getShippingMethods->execute(
-                $this->getReceiverCoordinate($request),
-                $request->getStoreId()
-            ) as $shippingMethod
-        ) {
+        foreach ($this->getShippingMethods->execute(
+            $this->getReceiverCoordinate($request),
+            $request->getStoreId()
+        ) as $shippingMethod) {
             $method = $this->rateMethodFactory->create();
             $method->setCarrier($this->_code);
             $method->setMethod($shippingMethod['type']);

@@ -31,7 +31,7 @@ class Config
 
     public function __construct(
         private readonly ScopeConfigInterface $config
-    ){
+    ) {
     }
 
     public function getEndpoint(?int $storeId): string

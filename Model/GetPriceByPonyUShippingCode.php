@@ -17,8 +17,8 @@ class GetPriceByPonyUShippingCode
 
     public function __construct(
         private readonly ScopeConfigInterface $scopeConfig,
-        private readonly Json $json)
-    {
+        private readonly Json $json
+    ) {
     }
 
     public function execute(string $code, ?int $storeId): int

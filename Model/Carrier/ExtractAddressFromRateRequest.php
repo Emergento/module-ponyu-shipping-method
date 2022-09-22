@@ -15,7 +15,8 @@ use Magento\InventorySourceSelectionApi\Api\Data\AddressInterfaceFactory;
 class ExtractAddressFromRateRequest
 {
     public function __construct(
-        private readonly AddressInterfaceFactory $addressFactory) {
+        private readonly AddressInterfaceFactory $addressFactory
+    ) {
     }
 
     public function execute(RateRequest $request): AddressInterface

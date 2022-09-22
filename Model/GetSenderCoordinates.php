@@ -51,5 +51,4 @@ class GetSenderCoordinates
         }
         return $searchResults[0];
     }
-
 }

@@ -9,7 +9,8 @@ use Magento\Framework\Phrase;
 class GenerateSlotLabel
 {
 
-    public function __construct(private readonly ResolverInterface $localeResolver){
+    public function __construct(private readonly ResolverInterface $localeResolver)
+    {
     }
 
     public function execute(\DateTime $slotStartDate, \DateTime $slotEndDate): Phrase
